@@ -23,7 +23,7 @@ const LandingPage = () => {
     <div className='grid grid-cols-5 p-3 gap-6'>
       {data ? (
         data.map((e, index) => (
-          <div key={index} className="col-span-1 p-4 bg-slate-900 rounded-md flex flex-col justify-between">
+          <div key={index} className=" col-span-full md:col-span-1 p-4 bg-slate-900 rounded-md flex flex-col justify-between">
             <img src={e.url} alt="" className='w-full '/>
             <h3 className='mt-3 font-semibold text-xl'>{e.imageName}</h3>
           </div>
